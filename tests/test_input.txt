@@ -1,0 +1,8 @@
+./lrg -n -i error sample.log
+./lrg zzz sample.log
+echo $?
+./lrg error nofile.log
+./lrg -n error sample.log
+./lrg -i error sample.log
+cat sample.log | ./lrg -i error
+./lrg -n error
